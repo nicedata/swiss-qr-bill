@@ -32,6 +32,7 @@ class QRBill:
         result = Validator.validate(bill)
         cleaned_bill = result.cleaned_bill
         if result.has_errors:
+            print(result.get_description())
             return
         if bill.format.output_size == OutputSize.QR_CODE_ONLY:
             qr_code = QRCode(cleaned_bill)

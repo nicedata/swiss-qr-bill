@@ -203,7 +203,7 @@ class Validator:
         if value:
             address_out.town = value
 
-        address_out.country_code = address.country_code.strip() if address_out.country_code else address_out.country_code
+        address_out.country_code = address.country_code.strip() if address.country_code else address.country_code
 
         if address_out.name is None and address_out.country_code is None and address_out.type == AddressType.UNDETERMINED:
             return None
@@ -309,7 +309,6 @@ class Validator:
         return True
 
     def create_clean_scheme_list(self) -> List[AlternativeScheme]:
-        length = len(self._bill_in.alternative_schemes)
         scheme_list: List[AlternativeScheme] = []
         for schema in self._bill_in.alternative_schemes:
             scheme_out = AlternativeScheme(schema.name, schema.instruction)

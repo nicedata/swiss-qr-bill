@@ -3,8 +3,6 @@ from swiss_qr_bill.generator.alternative_scheme import AlternativeScheme
 from swiss_qr_bill.generator.bill import Bill
 from swiss_qr_bill.generator.enums import Language, SeparatorType
 
-print(__file__)
-
 
 def sample_bill_with_qr_iban():
     bill = Bill()
