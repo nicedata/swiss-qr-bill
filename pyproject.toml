@@ -8,10 +8,13 @@ maintainers = [
     { "name" = "Martin Mohnhaupt", email = "m.mohnhaupt@bluewin.ch" },
 ]
 
-license = { text = "MIT License" }
+license = { file = "LICENSE" }
 readme = "README.md"
 
-classifiers = ["Private :: Do Not Upload"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.12",
+]
 
 requires-python = ">=3.9"
 dependencies = ["affine>=2.4.0", "python-stdnum>=1.20", "qrcodegen>=1.8.0"]
