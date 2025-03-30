@@ -1,6 +1,6 @@
 [project]
 name = "swiss-qr-bill"
-version = "0.0.27"
+version = "0.0.28"
 description = "Generate various swiss QR bills"
 
 authors = [{ "name" = "Martin Mohnhaupt", email = "m.mohnhaupt@bluewin.ch" }]
@@ -12,8 +12,12 @@ license = { file = "LICENSE" }
 readme = "README.md"
 
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 
 requires-python = ">=3.9"
