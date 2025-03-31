@@ -1,17 +1,19 @@
 [project]
 name = "swiss-qr-bill"
-version = "0.0.28"
-description = "Generate various swiss QR bills"
+version = "0.0.29"
+description = "A python library to generate swiss QR bills"
 
 authors = [{ "name" = "Martin Mohnhaupt", email = "m.mohnhaupt@bluewin.ch" }]
 maintainers = [
     { "name" = "Martin Mohnhaupt", email = "m.mohnhaupt@bluewin.ch" },
 ]
 
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 readme = "README.md"
 
 classifiers = [
+    "Operating System :: OS Independent",
     "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -31,10 +33,16 @@ line-length = 200
 
 
 [tool.pytest.ini_options]
-addopts = ['--strict-config', '-ra']
+addopts = ["--strict-config", "-ra"]
 pythonpath = ["swiss_qr_bill/"]
-testpaths = ["./tests/"]
+testpaths = ["./tests/general/"]
 
 [build-system]
-requires = ['setuptools']
-build-backend = 'setuptools.build_meta'
+requires = ["setuptools >= 77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "swiss_qr_bill" }
+# packages = ["swiss_qr_bill"]
+# include = ["swiss_qr_bill"]
+# namespaces = false
