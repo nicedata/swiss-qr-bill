@@ -43,6 +43,3 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 package-dir = { "" = "swiss_qr_bill" }
-# packages = ["swiss_qr_bill"]
-# include = ["swiss_qr_bill"]
-# namespaces = false
